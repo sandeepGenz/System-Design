@@ -2,17 +2,25 @@ package src.main.java.SingletonDP;
 
 public class TVSet {
 
-    private static TVSet tvSetInstance = null;
+    private static volatile TVSet tvSetInstance = null;
 
     private TVSet(){
-
+//        System.out.println("Called");
     }
 
     public static TVSet getTvSetInstance()
     {
         if(tvSetInstance == null)
         {
-            tvSetInstance = new TVSet();
+            synchronized(TVSet.class) { // locking
+
+                if(tvSetInstance == null)
+                {
+                    tvSetInstance = new TVSet();
+                }
+
+            }
+
         }
 
         return tvSetInstance;
