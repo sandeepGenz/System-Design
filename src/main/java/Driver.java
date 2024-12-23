@@ -1,4 +1,4 @@
-package src.main.java.SingletonDP;
+package src.main.java;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

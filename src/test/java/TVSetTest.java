@@ -1,9 +1,8 @@
 package src.test.java;
 import static org.junit.jupiter.api.Assertions.*;
-import src.main.java.SingletonDP.TVSet;
+import src.main.java.TVSet;
 import org.junit.jupiter.api.Test;
 
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
