@@ -11,3 +11,13 @@ public class ThreadCreationMethod2 implements Runnable {
         }
     }
 }
+
+/*
+
+1. See Doc of Thread.class
+2. We are passing the instance of Runnable to the Thread class so the target of type runnable is not empty
+
+***** You just extend the original Thread class and provide the Runnable object
+
+
+ */

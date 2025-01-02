@@ -17,3 +17,6 @@ public class ThreadCreationMethod1 extends Thread{
         }
     }
 }
+
+
+// **** as it extends , we are providing our own implementation of run instead of Thread class run (EXTENDS**)
