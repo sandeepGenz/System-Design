@@ -1,5 +1,7 @@
 package src.main.java.Multithreading;
 
+// Method Synchronization
+
 public class BankAccount {
     private int balance;
 
