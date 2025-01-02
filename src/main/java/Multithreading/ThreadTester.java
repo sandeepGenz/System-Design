@@ -7,11 +7,11 @@ public class ThreadTester {
 
         // we can provide the name to the thread , here first in the argument down and then in the class , we need to overload the constructor
 
-        Thread thread1 = new ThreadCreationMethod1(" Namma Thread1 ");
+//        Thread thread1 = new ThreadCreationMethod1(" Namma Thread1 ");
 
 //        thread1.setDaemon(true);
 
-        thread1.start(); // acynchronous method
+//        thread1.start(); // acynchronous method
 
 
         // ---------------- method 2 ---------------
