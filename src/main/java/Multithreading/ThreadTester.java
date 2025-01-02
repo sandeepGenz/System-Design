@@ -16,7 +16,12 @@ public class ThreadTester {
 
         // ---------------- method 2 ---------------
 
-        Thread thread2 = new Thread(new ThreadCreationMethod2() , " Namma Thread2 ");
+        Thread thread2 = new Thread(()->{
+            for(int i=0;i<5;i++)
+            {
+                System.out.println( "Inside "+ Thread.currentThread()+" "+ i);
+            }
+        } , " Namma Thread2 ");
         thread2.start();
 
 
