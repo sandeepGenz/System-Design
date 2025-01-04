@@ -6,7 +6,7 @@ public class Dog {
     private String breed;
     private double price;
 
-    public Dog(DogBuilder builder)
+    private Dog(DogBuilder builder)
     {
         this.name = builder.getName();
         this.gender = builder.getGender();
