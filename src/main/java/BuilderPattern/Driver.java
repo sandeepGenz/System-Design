@@ -9,3 +9,4 @@ public class Driver {
 
     }
 }
+// When .build() is called, the DogBuilder calls the private constructor of the Dog class, passing itself (this) as an argument.
