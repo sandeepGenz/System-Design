@@ -1,8 +1,8 @@
 package src.main.java.StrategyDesignPattern;
 
 public class SportsCar extends Vehicle{
-    SportsCar(DriveStrategy strategy)
+    SportsCar()
     {
-        super(strategy);
+        super(new SportsCarStrategy());
     }
 }
