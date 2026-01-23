@@ -1,7 +1,7 @@
 // Singleton DP with and without multithreading
 
 
-package src.main.java;
+package src.main.java.SingletonDesignPattern;
 
 
 public class TVSet {

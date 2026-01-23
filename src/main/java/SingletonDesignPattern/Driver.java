@@ -1,4 +1,4 @@
-package src.main.java;
+package src.main.java.SingletonDesignPattern;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

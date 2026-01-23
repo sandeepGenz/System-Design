@@ -1,6 +1,6 @@
 package src.test.java;
 import static org.junit.jupiter.api.Assertions.*;
-import src.main.java.TVSet;
+import src.main.java.SingletonDesignPattern.TVSet;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ExecutorService;
