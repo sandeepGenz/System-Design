@@ -12,6 +12,8 @@ public class TrafficLightContext {
     }
 
     public void change() {
-        state.handle(this);
+        state.handle(this); // this is actually the current context (here it is current traffic light)
     }
 }
+
+// perfect example of runtime polymorphism
