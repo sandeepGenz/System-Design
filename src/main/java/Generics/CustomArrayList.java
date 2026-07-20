@@ -58,7 +58,7 @@ class MyArrayList<T> {
     }
 
     public void resize() { // check check
-        Objects[] newElements = new Objects[elements.length * 2];
+        Object[] newElements = new Objects[elements.length * 2];
         System.arraycopy(elements,0,newElements,0,elements.length);
         elements = newElements;
 
