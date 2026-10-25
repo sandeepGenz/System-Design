@@ -1,13 +1,14 @@
-package src.main.java.ObserverPattern;
+package src.main.java.ObserverPattern.StockObserver;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class IphoneObservableImpl implements StockObservable{
+public class IphoneObservableImpl implements StocksObservable {
 
     List<NotificationAlertObserver> observerList = new ArrayList<>();
 
-    public int stockCount = 0;
+    int stock = 0;
+
     @Override
     public void add(NotificationAlertObserver observer) {
         observerList.add(observer);
@@ -20,23 +21,22 @@ public class IphoneObservableImpl implements StockObservable{
 
     @Override
     public void notifySubscribers() {
-        for(NotificationAlertObserver observer : observerList)
-        {
+        for(NotificationAlertObserver observer : observerList) {
             observer.update();
         }
     }
 
     @Override
     public void setStockCount(int newStockAdded) {
-        if(stockCount == 0)
-        {
+        if(this.stock == 0) {
             notifySubscribers();
         }
-        stockCount += newStockAdded;
+
+        this.stock = newStockAdded;
     }
 
     @Override
     public int getStockCount() {
-        return stockCount;
+        return stock;
     }
 }

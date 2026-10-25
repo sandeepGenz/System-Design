@@ -1,7 +1,9 @@
-package src.main.java.ObserverPattern;
+package src.main.java.ObserverPattern.StockObserver;
 
-public interface StockObservable {
+public interface StocksObservable {
+
     public void add(NotificationAlertObserver observer);
+
     public void remove(NotificationAlertObserver observer);
 
     public void notifySubscribers();
@@ -9,4 +11,5 @@ public interface StockObservable {
     public void setStockCount(int newStockAdded);
 
     public int getStockCount();
+
 }
